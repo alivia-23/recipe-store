@@ -1,7 +1,7 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
-const PORT = 3000;
+const PORT = 5020;
 
 const recipeServer = require('./recipe-server');
 const { v4: uuidv4 } = require('uuid');
@@ -98,4 +98,4 @@ app.post('/recipes', express.json(), (req, res) => {
   res.json(recipe);
 })
 
-app.listen(PORT, () => console.log(`Listening to http://${PORT}`));
+app.listen(PORT, () => console.log(`Listening to http://localhost:${PORT}`));
