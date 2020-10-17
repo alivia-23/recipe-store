@@ -1,34 +1,21 @@
-# Exam 2
-
-* start from the up-to-date master branch (`git checkout master; git pull origin master`)
-* Create a feature branch named 'exam2' (`git checkout -b exam2`)
-* modify the `questions.md` file to have the answers required
-* Add any files necessary to create the application below
-* add, commit, and push the branch to github
-* Create a PR to merge to master
-* Be sure to include the reviewer(s)
-* Due by 11:59pm (PT) Sun Mar 29
 
 ## Goal and Requirements
 
-* Did you remember the above requirement about `questions.md`?
-
-You will create a recipe storage and search website, along with the services necessary to support it.
+Created a recipe storage and search website, along with the services necessary to support it.
 
 The application will be a single-page application. (which means only one page load!)  It will NOT use React and it will not use Create React App.
 
-I will be able to install, build, and run your application with `npm install`, `npm start`
-* You will have to create the necessary `scripts` section in `package.json`
-* Hint: It is good to test that this works!
+ Anyone will be able to install, build, and run this application with `npm install`, `npm start`
+* Created the necessary `scripts` section in `package.json`
 
 From the main screen when a user loads the application:
 * There is an option to login, but they are not required to login to view
 * They can see a list of all recipe titles and their authors
 * They can click a recipe title to see the recipe (author, title, ingredients, and instructions)
-  * Do NOT use the recipe title as an identifier for the record, store an id with each recipe
+  * Did not used the recipe title as an identifier for the record, store an id with each recipe
 * Logged in users can add a new recipe (title, ingredients, and instructions)
     * Hint: `<textarea>` is better for long blocks of text than `<input>`
-    * Hint: The server must enforce that they are logged in 
+    * Hint: The server enforced that they are logged in 
 * When not on the main page, they can click something to return to the main page
 
 * You must use 'express' as your node server library
@@ -73,35 +60,27 @@ From the main screen when a user loads the application:
 
 ### REST Services
 
-* You will need to add REST services to fulfill the needs of the application
-* Pick services data, methods, URLs, and status codes to match the requirements of RESTful services as described in class
+* Added REST services to fulfill the needs of the application
+* Picked services data, methods, URLs, and status codes to match the requirements of RESTful services as described in class
 * Any request/response bodies will be in JSON (if they are present)
-* Store the author (username) of a new recipe, along with any created id for that recipe
+* Stored the author (username) of a new recipe, along with any created id for that recipe
 
 ### Persistence
 * There is no particular persistence requirement: the data need only persist as long as the server is running
-* If you restart the server, the data is lost
-* You may pre-populate some recipes if you wish
-
-## Allowances
-* You may create your HTML as you see fit, but it must be fundamentally semantically valid and other best practices from class
-* You may create the CSS as you see fit but you must follow the best practices given in class
-* You may add icons and background images but there is no requirement to do so
-* You may use `express`, `cookie-parser`, and any other modules that have been used in class
+* If we restart the server, the data is lost
+* Pre-populated some recipes
 
 ## Restrictions
-* You must provide meaningful, and where applicable, ACTIONABLE error messages for your user on the page (for service calls)
-* You should use no external libraries of any kind save for those explicitly allowed
-* Do not use React
-* Your JS, HTML, and CSS files must uphold the best practices from class (some, but not all, are listed below)
-* You may not use floats to do more than manage flowing text with images
-* You may not use HTML tables or CSS table layouts
-* Do not have any files in your PR except for the exam (no files from other assignments, for example)
-* Do not use var
-* Do not use alert
-* Do not use terrible variable names
+* Provided meaningful, and where applicable, ACTIONABLE error messages for users on the page (for service calls)
+* Used no external libraries of any kind save for those explicitly allowed
+* JS, HTML, and CSS files upholds the best practices from class (some, but not all, are listed below)
+* Did not used floats to do more than manage flowing text with images
+* Did not used HTML tables or CSS table layouts
+* Did not used var
+* Did not used alert
+* Did not used terrible variable names
 * Do not have console.log debugging messages or commented out code
 * The only permitted client-side storage is a single cookie to track login
-* Do not use window.location or other redirects
-* You may not use CSS preprocessors, minifiers, or other tools to modify your CSS
-* There should only be a single page load
+* Did not used window.location or other redirects
+* Did not used CSS preprocessors, minifiers, or other tools to modify your CSS
+* There is only be a single page load
